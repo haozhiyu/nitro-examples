@@ -51,7 +51,7 @@ class nitroServer:
         print(content)
         return content
 
-    # return the private key's hash value, not an implement of crypty sign operation
+    # return the private key's hash value, not an implement of crypto sign operation
     def sign(self, credential, encryptedPrivateKey, encryptedDataKey, transaction):
         nitro_kms = nitroKms()
 
