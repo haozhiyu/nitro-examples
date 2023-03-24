@@ -25,7 +25,7 @@ when you try to run the Nitro Enclave application, you should configure below th
 - **Region** : you need choose a region where you deploy your application, and you need set **ENV** in Dockerfile 
 - **KMS** : you need create a **Symmetric** kms key, which used for **Encrypt and decrypt**, you need copy this
 - **IAM Role** : IAM Role should assign the policy to allow call KMS encrypt,generateDataKey
-- **vsock-proxy** : before you start the enclave application, you should start the vsock-proxy for kms. below command with run the proxy on parent instance which will forward request on port 8000 to endpoint *kms.ap-southeast-1.amazonaws.com* on port443
+- **vsock-proxy** : before you start the enclave application, you should start the vsock-proxy for kms. Below command will run the proxy on parent instance which will forward request on port 8000 to endpoint *kms.ap-southeast-1.amazonaws.com* on port 443
 ```
 vsock-proxy 8000 kms.ap-southeast-1.amazonaws.com 443 &
 ```
